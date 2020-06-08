@@ -1,13 +1,15 @@
     const person = {
-        age: 28,
-        country: 'KZ'
+        name: 'Rick',
+        age: 77,
+        country: 'US',
     };
     const clone1 = Object.assign({}, person);
     const clone2 = Object.assign({}, person);
 
     const samePerson = {
-        age: 28,
-        country: 'KZ'
+        name: 'Rick',
+        age: 77,
+        country: 'US',
     };
-    person.age = 29;
+    person.age = 78;
     person.coutry = 'FR';
