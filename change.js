@@ -1,7 +1,7 @@
 
 
 const get = function(key) {
-    return sourceObject['key'];
+    return sourceObject[key];
 };
 const set = function(key, value) {
     sourceObject['key'] = value;
