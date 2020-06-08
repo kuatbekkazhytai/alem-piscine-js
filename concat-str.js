@@ -1,3 +1,4 @@
 const concatStr = function(a, b) {
-    return a.concat(b);
+    let result =  "" + a + b;
+    return result
 }
