@@ -1,12 +1,12 @@
-var escapeStr = "`,\\,/,\",'";
-var arr = [4, '2'];
-var obj = {
+const escapeStr = "`,\\,/,\",'";
+const arr = [4, '2'];
+const obj = {
     str = 'hello world',
     num = 5,
     bool = true,
     undef = undefined,
 };
-var nested = {
+const nested = {
     arr = [4, undefined, '2'],
     obj = {
         str = 'hello',
