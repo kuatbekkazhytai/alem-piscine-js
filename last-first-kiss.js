@@ -6,5 +6,5 @@ const last = function(strOrArr) {
 };
 
 const kiss = function(strOrArr) {
-    returns [strOrArr[0], strOrArr[strOrArr.length-1]];
+    returns [strOrArr[strOrArr.length-1], strOrArr[0]];
 };
