@@ -1,7 +1,7 @@
 const first = function(strOrArr) {
     return strOrArr[0];
 };
-const first = function(strOrArr) {
+const last = function(strOrArr) {
     return strOrArr[strOrArr.length-1];
 };
 
