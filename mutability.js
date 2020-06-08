@@ -3,10 +3,8 @@
     //     age: 77,
     //     country: 'US',
     // };
-    const clone1 = Object.assign({}, person);
-    const clone2 = Object.assign({}, person);
-
-    let samePerson = Object.assign({}, person);
-
-    person.age = person.age + 1;
-    person.country = 'FR';
+    const clone1 = {...person}
+    const clone2 = {...person}
+    let samePerson = Object.assign(person)
+    samePerson.age += 1
+    samePerson.country = 'FR'
