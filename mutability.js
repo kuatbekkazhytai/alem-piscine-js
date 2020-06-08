@@ -12,4 +12,4 @@
         country: 'US',
     };
     person.age = 78;
-    person.coutry = 'FR';
+    person.country = 'FR';
