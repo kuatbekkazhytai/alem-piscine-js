@@ -6,7 +6,7 @@
     const clone1 = Object.assign({}, person);
     const clone2 = Object.assign({}, person);
 
-    var samePerson = Object.assign({}, person);
+    let samePerson = Object.assign({}, person);
 
     person.age = person.age + 1;
     person.country = 'FR';
