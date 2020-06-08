@@ -1,5 +1,6 @@
-const id = returns(n);
-const returns = (id) => id;
 
-const length = ret(str)
+const returns = (id) => id;
+const id = returns(n);
+
 const ret = (str) => length.str;
+const length = ret(str)
