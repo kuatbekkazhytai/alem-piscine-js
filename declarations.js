@@ -9,9 +9,9 @@ const obj = {
 const nested = {
     arr : [4, undefined, '2'],
     obj : {
-        str,
-        num,
-        bool,
+        str : 'hello world',
+        num: 6,
+        bool: false,
     },
 };
 Object.freeze(obj);
