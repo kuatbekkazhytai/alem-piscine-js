@@ -1,6 +1,6 @@
 
-const returns = (id) => id;
-const id = returns(id);
+const returns = (idiwka) => idiwka;
+const id = returns(idiwka);
 
 const ret = (str) => length.str;
 const length = ret(str)
