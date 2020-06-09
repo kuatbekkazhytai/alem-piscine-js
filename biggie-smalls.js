@@ -1,4 +1,6 @@
-    var smalls;
-    smalls > Number.MAX_VALUE;
-    var biggie;
-    biggie < Number.MIN_VALUE;
+var biggie = parseInt(biggie);
+var smalls = parseInt(smalls);
+
+biggie = Number.POSITIVE_INFINITY;
+smalls = Number.NEGATIVE_INFINITY;
+
