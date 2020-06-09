@@ -8,6 +8,6 @@ const sign = (n) => {
 }
 
 const sameSign = (m,n) => {
-    return m*n > 0
+    return m*n >= 0
 }
 
