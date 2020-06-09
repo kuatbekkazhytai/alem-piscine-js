@@ -1,3 +1,3 @@
-const circular = {
+var circular = {
     circular:   circular,
 };
