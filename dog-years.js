@@ -10,4 +10,4 @@ var object = {
 };
 
 const dogYears = (name, age) => age * 7 / name / 31557600;
-console.log(dogYears(object.earth, 1000000000).toFixed([2]));
+// console.log(dogYears(object.earth, 1000000000).toFixed([2]));
