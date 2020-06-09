@@ -8,9 +8,9 @@ const sign = (n) => {
 }
 
 const sameSign = (m,n) => {
-    if (((m>0) && (n>0)) || ((m<0) && (n<0))) return true
+    if (((m>0) && (n>0)) || ((m<0) && (n<0)) ||((m==0) && (n==0)) ) return true
     return false
 }
 
-console.log(sameSign(0,231))
+console.log(sameSign(0,0))
 
