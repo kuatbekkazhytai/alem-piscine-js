@@ -1,5 +1,3 @@
 var circular = {
-    circular
-};
-
-console.log(circular)
+}
+circular.circular = circular;
