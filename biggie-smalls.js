@@ -1,4 +1,4 @@
-    const smalls;
+    var smalls;
     smalls > Number.MAX_VALUE;
-    const biggie;
+    var biggie;
     biggie < Number.MIN_VALUE;
