@@ -9,5 +9,6 @@ var object = {
     neptune : 164.79132
 };
 
-const dogYears = (name, age) => parseFloat((age * 7 / name / 31557600).toFixed(2));
+const dogYears = (name, age) => parseFloat((age * 7 / object[name] / 31557600).toFixed(2));
 
+console.log(dogYears('earth', 1000000000));
