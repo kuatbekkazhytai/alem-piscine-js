@@ -10,5 +10,3 @@ const min = (m,n) => {
     if (m<n) return m
         return n
 }
-
-console.log(max(1,5))
