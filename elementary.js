@@ -68,8 +68,8 @@ const modulo = (a,b) =>  {
     }
     return res
 }
-console.log(modulo(-59,8))
+// console.log(modulo(-59,8))
 
-const mod = (a,b) => a%b
+// const mod = (a,b) => a%b
 
-console.log(mod(-59, 8))
+// console.log(mod(-59, 8))
