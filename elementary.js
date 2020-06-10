@@ -61,15 +61,9 @@ const modulo = (a,b) =>  {
         a -= b
         resInt++ 
     }
-    // console.log(c)
     res = c - multiply(resInt, b)
     if (neg) {
         return -Math.abs(res)
     }
     return res
 }
-// console.log(modulo(-59,8))
-
-// const mod = (a,b) => a%b
-
-// console.log(mod(-59, 8))
