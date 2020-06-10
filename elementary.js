@@ -32,7 +32,7 @@ const divide = (a,b) =>{
     }
     a = Math.abs(a)
     b = Math.abs(b)
-    resInt = 0
+    var resInt = 0
     while (a >= b) {
         a -= b
         resInt++
@@ -41,7 +41,7 @@ const divide = (a,b) =>{
         return -Math.abs(resInt)
     }
     return resInt
-};
-// const modulo = (a,b) => a%b;
+}
+const modulo = (a,b) => a%b;
 
-console.log(divide(3,5))
+// console.log(divide(10,5))
