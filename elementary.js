@@ -46,21 +46,29 @@ const modulo = (a,b) =>  {
     if (b== 0) {
         return Number.POSITIVE_INFINITY
     }
+    var neg = false
+    if (a < 0) {
+        neg = true
+    } else {
+        neg = false
+    }
     a = Math.abs(a)
     var c = a
     b = Math.abs(b)
     var resInt = 0
     while (a >= b) {
         a -= b
-        resInt++
-       
+        resInt++ 
     }
     // console.log(c)
     res = c - (resInt * b)
+    if (neg) {
+        return -Math.abs(res)
+    }
     return res
 }
-console.log(modulo(-59,-8))
+console.log(modulo(-59,8))
 
 const mod = (a,b) => a%b
 
-console.log(mod(-59, -8))
+console.log(mod(-59, 8))
