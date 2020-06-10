@@ -45,7 +45,7 @@ const keepLast = (str) => {
 
 }
 const keepFirstLast  = (str) => {
-    if (str.length > 2 ) {
+    if (str.length > 4 ) {
         var res = ''
         var second = ''
         for (let i = 0; i < 2; i++) {
