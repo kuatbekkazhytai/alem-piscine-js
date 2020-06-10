@@ -14,7 +14,7 @@ const multiply = (a, b) => {
     }
 
     if (neg) {
-        return res * -1
+        return -Math.abs(res)
     }
     return res
 };
@@ -30,4 +30,4 @@ const multiply = (a, b) => {
 // };
 // const modulo = (a,b) => a%b;
 
-console.log(multiply(4,0))
+console.log(multiply(4,-1))
