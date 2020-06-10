@@ -42,6 +42,25 @@ const divide = (a,b) =>{
     }
     return resInt
 }
-const modulo = (a,b) => a%b;
+const modulo = (a,b) =>  {
+    if (b== 0) {
+        return Number.POSITIVE_INFINITY
+    }
+    a = Math.abs(a)
+    c = a
+    b = Math.abs(b)
+    var resInt = 0
+    while (a >= b) {
+        a -= b
+        resInt++
+       
+    }
+    // console.log(c)
+    res = c - (resInt * b)
+    return res
+}
+console.log(modulo(-59,-8))
 
-// console.log(divide(10,5))
+const mod = (a,b) => a%b
+
+console.log(mod(-59, -8))
