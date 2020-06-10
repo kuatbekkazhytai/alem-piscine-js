@@ -1,5 +1,5 @@
 var arr = []
-const indexOf = (arr, fromIndex, value ) => {
+const indexOf = (arr, value, fromIndex ) => {
     for (let i = fromIndex; i < arr.length; i++) {
         if (arr[i] == value) {
             return i
@@ -8,7 +8,7 @@ const indexOf = (arr, fromIndex, value ) => {
     return -1
 }
 
-const lastIndexOf = (arr, fromIndex, value) => {
+const lastIndexOf = (arr,  value, fromIndex) => {
     for(let i = arr.length-1; i >= fromIndex; i--) {
         if (arr[i] == value) {
             return i - fromIndex
