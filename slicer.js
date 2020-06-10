@@ -6,6 +6,9 @@ const slice = (strOrArr, start, end) => {
     } else{
         finish = end
     }
+    if (finish < 0) {
+        finish = strOrArr.length + finish
+    }
     if (start < 0) {
         start = strOrArr.length + start
     }
@@ -26,5 +29,5 @@ const slice = (strOrArr, start, end) => {
     }
 }
 
-console.log(slice('abcdef', -2))
+console.log(slice('abcdef', 0, -2))
 // console.log([1,2,3,4,5,6].slice(3,5))
