@@ -1,6 +1,6 @@
 var arr = []
 const indexOf = (arr, value, fromIndex ) => {
-
+    var start;
     if (!fromIndex) {
          start = 0;
     } else {
@@ -15,10 +15,15 @@ const indexOf = (arr, value, fromIndex ) => {
 }
 
 const lastIndexOf = (arr, value, fromIndex) => {
-
-    for(let i = arr.length-1; i >= fromIndex; i--) {
+    var start;
+    if (!fromIndex) {
+         start = 0;
+    } else {
+        start = fromIndex
+    }
+    for(let i = arr.length-1; i >= start; i--) {
         if (arr[i] == value) {
-            return i - fromIndex
+            return i - start
         }
     }
     return -1
@@ -32,6 +37,6 @@ const includes = (arr, value) => {
     return false
 }
 
-console.log(indexOf([1, 2, 3, 4, 5, 4, 3, 2, 1],2,2))
+console.log(lastIndexOf([1, 2, 3, 4, 5, 4, 3, 2, 1],2,2))
 
-console.log([1, 2, 3, 4, 5, 4, 3, 2, 1].indexOf(2,2));
+console.log([1, 2, 3, 4, 5, 4, 3, 2, 1].lastIndexOf(2,2));
