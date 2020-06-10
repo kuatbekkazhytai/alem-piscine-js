@@ -8,4 +8,4 @@ const repeat = (str, n) => {
     return res
 } 
 
-console.log(repeat('a', 3))
+// console.log(repeat('a', 3))
