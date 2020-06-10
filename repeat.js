@@ -1,4 +1,4 @@
-const repeat = (n, str) => {
+const repeat = (str, n) => {
     var res = '';
     let count = 0;
     while (count < n) {
@@ -7,3 +7,5 @@ const repeat = (n, str) => {
     }
     return res
 } 
+
+console.log(repeat('a', 3))
