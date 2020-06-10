@@ -37,6 +37,6 @@ const includes = (arr, value) => {
     return false
 }
 
-console.log(lastIndexOf([1, 2, 3, 4, 5, 4, 3, 2, 1],2,2))
+// console.log(lastIndexOf([1, 2, 3, 4, 5, 4, 3, 2, 1],2,2))
 
-console.log([1, 2, 3, 4, 5, 4, 3, 2, 1].lastIndexOf(2,2));
+// console.log([1, 2, 3, 4, 5, 4, 3, 2, 1].lastIndexOf(2,2));
