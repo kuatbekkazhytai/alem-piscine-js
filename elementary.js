@@ -17,17 +17,31 @@ const multiply = (a, b) => {
         return -Math.abs(res)
     }
     return res
-};
-// const divide = (a,b) =>{
-//     var neg = false
+}
 
-//     resInt = 0
-//     while (a >= b) {
-//         a -= b
-//         resInt++
-//     } 
-//     return resInt
-// };
+
+const divide = (a,b) =>{
+    if (b== 0) {
+        return Number.POSITIVE_INFINITY
+    }
+    var neg = true
+    if (((a>0) && (b>0)) || ((a<0) && (b<0))) {
+        neg = false
+    } else {
+        neg = true
+    }
+    a = Math.abs(a)
+    b = Math.abs(b)
+    resInt = 0
+    while (a >= b) {
+        a -= b
+        resInt++
+    } 
+    if (neg) {
+        return -Math.abs(resInt)
+    }
+    return resInt
+};
 // const modulo = (a,b) => a%b;
 
-console.log(multiply(4,-1))
+console.log(divide(3,5))
