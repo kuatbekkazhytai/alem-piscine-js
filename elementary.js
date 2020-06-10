@@ -62,7 +62,7 @@ const modulo = (a,b) =>  {
         resInt++ 
     }
     // console.log(c)
-    res = c - (resInt * b)
+    res = c - multiply(resInt, b)
     if (neg) {
         return -Math.abs(res)
     }
