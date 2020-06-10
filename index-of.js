@@ -1,6 +1,12 @@
 var arr = []
 const indexOf = (arr, value, fromIndex ) => {
-    for (let i = fromIndex; i < arr.length; i++) {
+
+    if (!fromIndex) {
+         start = 0;
+    } else {
+        start = fromIndex
+    }
+    for (let i = start; i < arr.length; i++) {
         if (arr[i] == value) {
             return i
         }
@@ -8,7 +14,8 @@ const indexOf = (arr, value, fromIndex ) => {
     return -1
 }
 
-const lastIndexOf = (arr,  value, fromIndex) => {
+const lastIndexOf = (arr, value, fromIndex) => {
+
     for(let i = arr.length-1; i >= fromIndex; i--) {
         if (arr[i] == value) {
             return i - fromIndex
@@ -25,6 +32,6 @@ const includes = (arr, value) => {
     return false
 }
 
-// console.log(lastIndexOf([1,2,3,4,5,6,8,5,1,2],2, 2))
+console.log(indexOf([1, 2, 3, 4, 5, 4, 3, 2, 1],2,2))
 
-// console.log([1,2,3,4,5,6,8,5,1,2].lastIndexOf(2, 2));
+console.log([1, 2, 3, 4, 5, 4, 3, 2, 1].indexOf(2,2));
