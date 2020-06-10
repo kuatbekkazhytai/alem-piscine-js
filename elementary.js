@@ -47,7 +47,7 @@ const modulo = (a,b) =>  {
         return Number.POSITIVE_INFINITY
     }
     a = Math.abs(a)
-    c = a
+    var c = a
     b = Math.abs(b)
     var resInt = 0
     while (a >= b) {
